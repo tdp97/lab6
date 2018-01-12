@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Books_ojects{% endblock %}
+{% block body%}
+
+<div class="container">
+    <div class="row">
+        <div lass="col-md-6 col-md-offset-2">
+
+                <ul class="list-group">
+                    {% for publisher in object_list %}
+                    <li class="list-group-item"><center>{{ publisher.name }}</center></li>
+                    {% endfor %}
+                </ul>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
